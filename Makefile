@@ -22,6 +22,10 @@ Shifter = shifter.v
 
 FU = FunctionUnit.v
 
+#Flow should be as 
+# verilog to vpp to vcd 
+# sv to v for synthesis
+
 all:  waveform/FU.vcd
 
 waveform/%.vcd: vvp/%.out
