@@ -1,5 +1,8 @@
 module logical_unit (
-    input [1:0] L_sel, [31:0] A, [31:0] B,  output reg [31:0] G
+    input [1:0] L_sel,
+    input [31:0] A,
+    input [31:0] B,
+    output reg [31:0] G
 );
 
     parameter 

@@ -1,5 +1,9 @@
 module FunctionUnit (
-    input [31:0] A, [31:0] B, [3:0] FS, output [3:0] ZCNVFlags, reg [31:0] S
+    input [31:0] A,
+    input [31:0] B,
+    input [3:0] FS,
+    output [3:0] ZCNVFlags,
+    output reg [31:0] S
 );
     wire [31:0] ALU_result, Shift_result;
     wire signed [31:0]  A_signed = A, B_signed = B;

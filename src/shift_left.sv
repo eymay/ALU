@@ -1,7 +1,9 @@
 module shift_left #(
     data_length = 32
 ) (
-    input IL, [$clog2(data_length) -1:0] shift, [data_length - 1:0] B,
+    input IL,
+    input [$clog2(data_length) -1:0] shift,
+    input [data_length - 1:0] B,
     output [data_length - 1:0] H
 );
 wire[$clog2(data_length):0][data_length - 1:0] muxconnector;

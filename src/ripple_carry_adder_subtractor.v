@@ -1,7 +1,11 @@
 module ripple_carry_adder_subtractor #(
     parameter N = 32
 ) (
-    input Cin, [N-1:0] A, [N-1:0] B, output Cout, [N-1: 0] S
+    input Cin,
+    input [N-1:0] A,
+    input [N-1:0] B,
+    output Cout,
+    output [N-1: 0] S
 );
     
     wire [N:0] carry_connector;

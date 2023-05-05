@@ -1,5 +1,9 @@
 module ALU (
-    input [3:0] G_sel, [31:0] A, [31:0] B,  output reg [31:0] G,  [3:0] ZCNVFlags
+    input [3:0] G_sel,
+    input [31:0] A,
+    input [31:0] B,
+    output reg [31:0] G,
+    output  [3:0] ZCNVFlags
 );
     
     parameter 

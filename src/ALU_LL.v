@@ -1,9 +1,15 @@
 module ALU_LL (
-    input [3:0] G_sel, [31:0] A, [31:0] B,  output reg [31:0] G,  [3:0] ZCNVFlags
+    input [3:0] G_sel,
+    input [31:0] A,
+    input [31:0] B,
+    output reg [31:0] G,
+    output [3:0] ZCNVFlags
 );
     //reg carry_in;
     wire carry_out;
     wire [31:0] Arithmetic_result, Logical_result;
+    
+    //TODO new adder topology needed
     ripple_carry_adder_subtractor #(.N(32)) rcas(.A(A), .B(B), .Cin(G_sel[0]),
      .Cout(ZCNVFlags[2]), .S(Arithmetic_result));
 
