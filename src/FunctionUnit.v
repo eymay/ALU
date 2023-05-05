@@ -25,6 +25,10 @@ module FunctionUnit (
                 S = ALU_result;
             SLL, SRL,SRA:
                 S = Shift_result;
+            //TODO 1.a "Note that you can make number comparison
+            //by subtracting the numbers and evaluating carry and 
+            //overflow."
+            //We should implement the following in low level as stated
             SLT:
                 S = (A_signed > B_signed) ? 1:0;
             SLTU:
