@@ -1,5 +1,9 @@
 # Function Unit with ALU and Shifter
 
+Mehmet Eymen Ünay 040190218
+
+Deniz Bashgoren 040180902
+
 ## ALU Design 
 
 ### High Level Overview
@@ -57,11 +61,16 @@ The selected adder/subtractor unit will be used in ADD and SUB instructions. The
 ## ALU Implementation
 
 ### Adder/Subtractor Topology
-
+Modified Ripple Carry Adder to host subtraction was used in a parameterised way.
 ### Synthesis of ALU
+RTL Schematic of Arithmetic and Logic Unit:
 
+![](res/1_alu_rtl.png)
+![](res/1_logic_rtl.png)
 ### Behavioural Simulation of ALU
 
+![](res/1_sim_alu.png)
+![](res/1_sim_alu_flags.png)
 
 
 ## Shifter Design
@@ -85,16 +94,31 @@ Bit 30 is used to select arithmetic shifts and bit 14 is used to select right or
 ## Shifter Implementation
 
 ### Topology
-Barrel shifter topology with parameterised design is used to have a shift in one clock cycle.
+Barrel shifter topology with parameterised design is used to have a shift in one clock cycle. The design is open sourced and can be found [here](https://gist.github.com/Eymay/1deab2b5f6dbad6da82ea82f3d49aed9)
+
+![](res/barrel_shifter.png)
 
 ### Synthesis of Shifter
+RTL Schematic of Shifter:
+![](res/shifter_RTL.png)
 
 ### Behavioural Simulation of Shifter
+Simulation of SLL
+![](res/SLL.png)
+Simulation of SLR
+![](res/SLR.png)
 
-
+Simulation of SRA
+![](res/SRA.png)
 
 ## Integration of ALU and Shifter in Functional Unit
 
 ### Synthesis of FU
 
-### Post-Synthesis Functional Simulation of FU
+RTL Schematic of Functional Unit:
+![](res/functional_unit_rtl.png)
+
+### Behavioural Simulation of Shifter
+
+![](res/functional_unit_sim1.png)
+![](res/functional_unit_sim2.png)
