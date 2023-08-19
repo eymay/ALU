@@ -1,9 +1,5 @@
 # Function Unit with ALU and Shifter
 
-Mehmet Eymen Ünay 040190218
-
-Deniz Bashgoren 040180902
-
 ## ALU Design 
 
 ### High Level Overview
